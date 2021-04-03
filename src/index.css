@@ -2,7 +2,12 @@
 /* @media only screen and (min-width: 960px; max-width: 375px) {
   .app .score-section p .question-section .question-count{display: flex;}
 } */
-
+@media (max-width : 992px){
+  .body{
+    width: 50% ;
+    display: inline-block
+  }
+}
 
 body {
   margin: 0;
@@ -23,7 +28,12 @@ code {
 }
 
 body {
-  background-color: #36454F;
+  background-image: url("./images/Hooks Ink photo.png");
+  background-size: 350px; 
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: top;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +42,7 @@ body {
 
 
 .app {
+  
   background-color:  #7851a9;
   width: 450px;
   min-height: 200px;
@@ -48,6 +59,7 @@ body {
   align-items: center;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
+  
   
 }
 
@@ -84,13 +96,13 @@ button {
   width: 100%;
   font-size: 16px;
   color: #ffffff;
-  background-color: #36454F;
+  background-color: #2b373f;
   border-radius: 10px;
   display: flex;
   padding: 10px;
   justify-content: flex-start;
   align-items: center;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   cursor: pointer;
 }
 
