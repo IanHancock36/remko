@@ -1,0 +1,95 @@
+
+
+body{
+  display: flex; 
+  justify-content: center;
+  min-height: 100% ;
+  margin: 10px;
+  background:black; 
+  /* height: 100vh; */
+  background-image: url('./Assets/images/Hooks_Ink_photo.png');
+  background-size: cover;
+  padding: 100px 40px 40px;
+}
+
+.container{
+  /* width:450px;
+  display: flex;  
+  flex-direction: column;   */
+  /* background: purple; */
+
+  /* padding: 40px 40px 40px;  */
+ 
+ 
+  /* box-shadow: 0 1.5px 0 0 ; */
+background: #7851a9;
+border-radius: 10px;
+/* box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75); */
+
+padding:20px 10px 20px 10px;
+align-items: center;
+justify-content: space-around;
+}
+
+.question-section{
+  padding: 40px 20px ;
+ 
+ 
+ 
+ 
+}
+.score-section{
+/* its got a p tag */
+padding: 30px;
+color: white;
+align-items: center;
+font-size: 20px;
+
+}
+
+.question-count {
+  /*  ist got a span in in it */
+ color: white;
+ font-size: 28px;
+ align-items: center;
+
+}
+
+
+
+.question-text{
+  color: white;
+  font-size: 20px;
+}
+
+.answer-section{
+  /*  its got a button in it */
+color: white;
+margin: 10px
+
+
+
+}
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+button{
+  padding: 20px;
+  width: 90%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2b373f;
+  border-radius: 10px;
+  /* margin:  5px 5px 5px 5px ; */
+  border: 3px solid #fff;
+  cursor: pointer;
+ 
+}
+
+.answer-button{
+  margin: 20px;
+}

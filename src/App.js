@@ -1,8 +1,8 @@
-
-import './App.css';
+import './questions.css'
 import Questions from './Components/Questions'
 import React, {useEffect}from "react";
 import ReactGA from "react-ga";
+
 
 function App() {
 
@@ -13,8 +13,12 @@ function App() {
 
 
   return (
-    <div className="app">
+    <div className="Questions-App">
+      
+
      <Questions />
+    
+  
     </div>
   );
 }

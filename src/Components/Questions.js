@@ -1,4 +1,4 @@
-import React,{useState, } from 'react'
+import React,{ useState } from 'react'
 
 
 
@@ -51,8 +51,10 @@ const handleAnswerButtonClick = (isCorrect) => {
 }
 
     return (
-        <div className="Questions">
-{showScore ? (
+       
+
+        <div className="container">
+                {showScore ? (
 				<div className='score-section'><p>You scored {score} out of {questions.length} </p>
                 <p> Use Coupon Code: "HOOKSINK" for 10% off your next Tattoo</p> 
                 </div>
@@ -60,6 +62,7 @@ const handleAnswerButtonClick = (isCorrect) => {
 			) : (
 				<>
 					<div className='question-section'>
+                        <div className='logo' /> 
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
@@ -67,13 +70,14 @@ const handleAnswerButtonClick = (isCorrect) => {
 					</div>
 					<div className='answer-section'>
                         {questions[currentQuestion].answerOptions.map((answerOption,index) =>(
-                            <button onClick={()=> handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+                            <button className='answer-button' onClick={()=> handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                         ))}
 						
 					</div>
 				</>
 			)}
 		</div>
+        
 	);
 }
        
